@@ -28,4 +28,6 @@ const data = {
 // teacher.pending_list => validating course that waiting for validator and then for earnest money (withdrawable when it over than minimum of student enroll)
 // student.course_list => purchased course
 // student.pending_list => purchasing course
+// student.pending_list.ref_id => paypal refference id
+
 export default data
