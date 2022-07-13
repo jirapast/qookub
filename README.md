@@ -14,7 +14,7 @@ Qookub is a skeleton provides for who ...
 * Organization (Teacher: Income-Assessment-Reward)
 ### Middlewares
 * Roles
-* Teacher Assessor 
+* Teacher Validater 
 * Content Validater
 * Owns Studying/Teaching List
 ### Utility
