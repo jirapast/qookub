@@ -1,4 +1,8 @@
 const data = {
+    admin: [
+        {name: "admin1", email: "admin1@email.com", password: "666666", role: "super_admin"},
+        {name: "admin2", email: "admin2@email.com", password: "666666", role: "admin"},
+    ],
     students: [
         {name: "jojo", email: "jojo@example.com", password: "123456", role: "student", course_list: ["bitcoin 101", "basic robotics", "how to sushi"], pending_list: [{ref_id: 1, course_name: "chess for newbies"}, {ref_id: 2, course_name: "unseen africa"}]},
         {name: "yoyo", email: "yoyo@example.com", password: "123456", role: "student", course_list: ["bitcoin 101"], pending_list: []},
@@ -9,12 +13,14 @@ const data = {
         {name: "wanchai", email: "wanchai@example.com", password: "123456", role: "teacher", course_list: ["basic robotics", "how to sushi"], pending_list: []},
     ],
     courses: [
-        {course_name: "bitcoin_101", tag: "fintech", teacher: "dang", section: [
+        {course_name: "bitcoin_101", tag: "fintech", teacher: "dang", 
+          section: [
             {section_name: "what is money", chapter: ["what when why", "money origin"]},
             {section_name: "type of money", chapter: ["creatable money", "non-creatable money"]},
             {section_name: "about satoshi", chapter: ["who is who", "satoshi nakamoto"]},
         ]},
-        {course_name: "basic robotics", teacher: "wanchai", section: [
+        {course_name: "basic robotics", teacher: "wanchai", 
+          section: [
             {section_name: "machatronics", chapter: ["electrical machine", "machanical machine"]},
             {section_name: "the modern robot", chapter: ["robot car", "3d printer"]},
         ]},
