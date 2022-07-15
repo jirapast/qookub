@@ -7,6 +7,7 @@ Qookub is a skeleton provides for who ...
 * Studying Room (role: student) => Studying List (CR: C=Enroll)
 * Teaching Room (role: teacher) => Teaching List (CRUD: C=Upload)
 * User Profile (by role)
+* Admin Page
 ### APIs
 * Users
 * Course Management via GCP
@@ -20,4 +21,5 @@ Qookub is a skeleton provides for who ...
 ### Utility
 * Database => Course/Section/Chapter
 * Data Logger => TimeStamp/Event
+* Order System
 
