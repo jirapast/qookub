@@ -13,7 +13,6 @@ export default function CourseScreen({ data }) {
 
     return (
         <Layout title='Course Page'>
-        dd
            {/* <p>{JSON.stringify(course.section, null, 4)}</p> */}
            <CourseItem course = {course.section}/>
         </Layout>
