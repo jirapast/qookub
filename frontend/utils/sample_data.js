@@ -13,19 +13,19 @@ const data = {
         {name: "wanchai", email: "wanchai@example.com", password: "123456", role: "teacher", course_list: ["basic robotics", "how to sushi"], pending_list: []},
     ],
     courses: [
-        {course_name: "bitcoin_101", tag: "fintech", teacher: "dang", 
+        {course_name: "bitcoin_101", rating: 4, tag: "fintech", teacher: "dang", total_enrol: 22,
           section: [
             {section_name: "what is money", chapter: ["what when why", "money origin"]},
             {section_name: "type of money", chapter: ["creatable money", "non-creatable money"]},
             {section_name: "about satoshi", chapter: ["who is who", "satoshi nakamoto"]},
         ]},
-        {course_name: "basic robotics", teacher: "wanchai", 
+        {course_name: "basic robotics", rating: 4.5, tag: "hardware", teacher: "wanchai", total_enrol: 11,
           section: [
             {section_name: "machatronics", chapter: ["electrical machine", "machanical machine"]},
             {section_name: "the modern robot", chapter: ["robot car", "3d printer"]},
         ]},
     ],
-    tags: ["fintech", "robotics", "chess"]
+    tags: ["fintech", "hardware", "chess"]
 }
 
 // metadata

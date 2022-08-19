@@ -17,16 +17,16 @@ export default function CourseItem({ course }) {
             })} */}
 
             { course.map((x) => (
-            <>
-                <p> section: { x.section_name} </p>
+            <div key={x.section_name}>
+                <b> section: { x.section_name} </b>
                 <ul>
                 { x.chapter.map((y) => (
-                    <li>
+                    <li key={y}>
                         chapter: { y }
                     </li>
                 )) }
                 </ul>
-            </>
+            </div>
             )) }
         </>
     )
