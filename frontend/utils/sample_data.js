@@ -15,14 +15,14 @@ const data = {
     courses: [
         {course_name: "bitcoin_101", rating: 4, tag: "fintech", teacher: "dang", total_enrol: 22,
           section: [
-            {section_name: "what is money", chapter: ["what when why", "money origin"]},
-            {section_name: "type of money", chapter: ["creatable money", "non-creatable money"]},
-            {section_name: "about satoshi", chapter: ["who is who", "satoshi nakamoto"]},
+            {section_name: "what is money", chapter: [{name: "what when why", url: "https://www.youtube.com/embed/s3NWyh8a5t0"}, {name: "money origin", url: "https://www.youtube.com/embed/s3NWyh8a5t0"}]},
+            {section_name: "type of money", chapter: [{name: "creatable money", url: "https://www.youtube.com/embed/s3NWyh8a5t0"}, {name: "non-creatable money", url: "https://www.youtube.com/embed/s3NWyh8a5t0"}]},
+            {section_name: "about satoshi", chapter: [{name: "who is who", url: "https://www.youtube.com/embed/s3NWyh8a5t0"}, {name: "satoshi nakamoto", url: "https://www.youtube.com/embed/s3NWyh8a5t0"}]},
         ]},
         {course_name: "basic robotics", rating: 4.5, tag: "hardware", teacher: "wanchai", total_enrol: 11,
           section: [
-            {section_name: "machatronics", chapter: ["electrical machine", "machanical machine"]},
-            {section_name: "the modern robot", chapter: ["robot car", "3d printer"]},
+            {section_name: "machatronics", chapter: [{name: "electrical machine", url: "https://www.youtube.com/embed/cPOtULagNnI"}, {name: "machanical machine", url: "https://www.youtube.com/embed/cPOtULagNnI"}]},
+            {section_name: "the modern robot", chapter: [{name: "robot car", url: "https://www.youtube.com/embed/cPOtULagNnI"}, {name: "3d printer", url: "https://www.youtube.com/embed/cPOtULagNnI"}]},
         ]},
     ],
     tags: ["fintech", "hardware", "chess"]

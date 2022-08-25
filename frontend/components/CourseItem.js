@@ -21,8 +21,17 @@ export default function CourseItem({ course }) {
                 <b> section: { x.section_name} </b>
                 <ul>
                 { x.chapter.map((y) => (
-                    <li key={y}>
-                        chapter: { y }
+                    <li key={y.name}>
+                        chapter: { y.name }
+                        <div>
+                            <iframe 
+                                src={ y.url }
+                                frameBorder="0"
+                                allow="autoplay; encrypted-media"
+                                allowFullScreen
+                                title={ y.name }
+                            />{" "}
+                        </div>
                     </li>
                 )) }
                 </ul>

@@ -10,7 +10,7 @@ export default function Layout({ title, children }) {
           <Head>
             <title>{title ? title + ' - Maw' : 'Maw'}</title>
             <meta name="description" content="Online Learning Website" />
-            <link rel="icon" href="/favicon.ico" />
+            <link rel="icon" href="./favicon.ico" />
           </Head>
           <div className="flex min-h-screen flex-col justify-between ">
             <header>
