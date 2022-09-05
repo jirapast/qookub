@@ -1,4 +1,4 @@
-# Qookub e-leaning platform
+# 👨🏼‍🏫 Qookub e-leaning platform
 
 ## Run Development:
 * Frontend > npm run dev (First time, don't forgot to > npm install)
