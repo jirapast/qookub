@@ -5,6 +5,7 @@
 * Backend > python main.py
 
 ## Todo:
+* Dockerize
 * Database
 * OAuth
 * UI
