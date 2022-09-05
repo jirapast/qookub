@@ -1,4 +1,4 @@
-# Devcartel API Mockup
+# API Mockup
 
 ## Run
 $ python main.py
