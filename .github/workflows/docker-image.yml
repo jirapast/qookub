@@ -18,9 +18,9 @@ jobs:
       # run: docker build . --file Dockerfile --tag my-image-name:$(date +%s)
 
     - uses: isbang/compose-action@v1.2.0
-    - uses: pennsignals/publish_docker-compose@v0.1.1
-      with:
+    # - uses: pennsignals/publish_docker-compose@v0.1.1
+      # with:
         # version: '0.2.6-rc.1' # optional
         # docker_compose: 'docker-compose.build.yml' # required
-        docker_compose: 'docker-compose.yml'
+        # docker_compose: 'docker-compose.yml'
         # repo_token: "${{ secrets.GITHUB_TOKEN }}"
