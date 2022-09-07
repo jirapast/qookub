@@ -4,18 +4,14 @@ from fastapi.middleware.cors import CORSMiddleware # T-T
 #from rsa import verify
 #from sqlalchemy import null
 
-# from app.model import UserSchema, AdminSchema, AdminLoginSchema
-# from app.auth.auth_bearer import JWTBearer
-# from app.auth.auth_handler import signJWT
-from .model import UserSchema, AdminSchema, AdminLoginSchema
-from .auth.auth_bearer import JWTBearer
-from .auth.auth_handler import signJWT
+from app.model import UserSchema, AdminSchema, AdminLoginSchema
+from app.auth.auth_bearer import JWTBearer
+from app.auth.auth_handler import signJWT
 
 from datetime import datetime
 from uuid import uuid1, UUID
 
-# from app.sample_data import courses, users, admins
-from .sample_data import courses, users, admins
+from app.sample_data import courses, users, admins
 
 #users = []
 
@@ -27,12 +23,8 @@ app = FastAPI(
 
 # Set CORS
 origins = [
-    "localhost:3000",
     "http://localhost:3000",
-    "https://localhost:3000",
-    "localhost:4000",
-    "http://localhost:4000",
-    "https://localhost:4000",
+    "localhost:3000"
 ]
 
 app.add_middleware(
