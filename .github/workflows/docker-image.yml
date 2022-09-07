@@ -1,0 +1,26 @@
+name: Docker Image CI
+
+on:
+  push:
+    branches: [ "main", "tn_b1" ]
+  pull_request:
+    branches: [ "main", "tn_b1" ]
+
+jobs:
+
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v3
+    # - name: Build the Docker image
+      # run: docker build . --file Dockerfile --tag my-image-name:$(date +%s)
+
+    - uses: isbang/compose-action@v1.2.0
+    # - uses: pennsignals/publish_docker-compose@v0.1.1
+      # with:
+        # version: '0.2.6-rc.1' # optional
+        # docker_compose: 'docker-compose.build.yml' # required
+        # docker_compose: 'docker-compose.yml'
+        # repo_token: "${{ secrets.GITHUB_TOKEN }}"
