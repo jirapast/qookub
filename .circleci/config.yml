@@ -24,22 +24,20 @@
 version: 2.1
 
 jobs:
+
   hello-job-linux:
     machine:
       image: ubuntu-2204:2022.07.1
     steps:
       - checkout # check out the code in the project directory
       - run: echo "hello world linux" # run the `echo` command
-
-
-jobs:
+      
   hello-job-mac:
     macos:
       xcode: 13.4.1
     steps:
       - checkout # check out the code in the project directory
-      - run: echo "hello world mac" # run the `echo` command
-
+      - run: echo "hello world mac" # run the `echo` command  
 
 workflows:
   my-workflow:
